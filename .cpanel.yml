@@ -1,3 +1,4 @@
+---
 deployment:
   tasks:
     - export DEPLOYPATH=/home/kina3126/public_html/kanpa.co.id/
