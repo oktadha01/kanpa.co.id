@@ -40,7 +40,7 @@ class Pushnotif extends CI_Controller
             'extraData' => $url
         ]);
         echo $message;
-        die;
+        // die;
         // Query subscribers from database
         $time = time();
         $query = $this->db->query("SELECT * FROM `push_subscribers` WHERE `expirationTime` = 0 OR `expirationTime` > '{$time}'  AND id = '25'");
