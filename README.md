@@ -1,1 +1,0 @@
-# kanpa.co.id
