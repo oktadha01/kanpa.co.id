@@ -2,9 +2,9 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/kina3126/public_html/kanpa.co.id/
-    - /bin/cp -R application $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp -R system $DEPLOYPATH
-    - /bin/cp .htaccess $DEPLOYPATH
-    - /bin/cp .cpanel.yml $DEPLOYPATH
+    # - /bin/cp -R application $DEPLOYPATH
+    # - /bin/cp -R assets $DEPLOYPATH
+    # - /bin/cp -R system $DEPLOYPATH
+    # - /bin/cp .htaccess $DEPLOYPATH
+    # - /bin/cp .cpanel.yml $DEPLOYPATH
     - /bin/cp index.php $DEPLOYPATH
