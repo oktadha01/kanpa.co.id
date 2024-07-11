@@ -156,44 +156,46 @@
     <?php
     }
     ?>
-    <!-- <button class="btn-pushnotif btn btn-success text-white" data-toggle="modal" data-target="#push-notifikasi"><i class="bi bi-send"></i> Push send notification </button> -->
     <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-    <!-- <div id="preloader"></div> -->
-    <!-- Modal -->
-    <div class="modal fade" id="push-notifikasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Push Notification Info</h5>
-                    <button type="button" class="close btn btn-secondary" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group mt-2">
-                                <label for="title-notif">Title</label>
-                                <input type="text" id="title-notif" class="form-control" required value="">
-                            </div>
-                            <div class="form-group mt-2">
-                                <label for="info-notif">Info</label>
-                                <input type="text" id="info-notif" class="form-control" required value="">
-                            </div>
-                            <div class="form-group mt-2">
-                                <label for="url-notif">URL Link</label>
-                                <input type="text" id="url-notif" class="form-control" required value="">
+    <?php if ($this->session->userdata("privilage") == 'Admin') { ?>
+        <button class="btn-pushnotif btn btn-success text-white" data-toggle="modal" data-target="#push-notifikasi"><i class="bi bi-send"></i> Push send notification </button>
+        <!-- <div id="preloader"></div> -->
+        <!-- Modal -->
+        <div class="modal fade" id="push-notifikasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Push Notification Info</h5>
+                        <button type="button" class="close btn btn-secondary" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group mt-2">
+                                    <label for="title-notif">Title</label>
+                                    <input type="text" id="title-notif" class="form-control" required value="">
+                                </div>
+                                <div class="form-group mt-2">
+                                    <label for="info-notif">Info</label>
+                                    <input type="text" id="info-notif" class="form-control" required value="">
+                                </div>
+                                <div class="form-group mt-2">
+                                    <label for="url-notif">URL Link</label>
+                                    <input type="text" id="url-notif" class="form-control" required value="">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" id="btn-send-notif" class="btn btn-primary">Send <i class="bi bi-send"></i></button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" id="btn-send-notif" class="btn btn-primary">Send <i class="bi bi-send"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    <?php } ?>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8JB3TCJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->

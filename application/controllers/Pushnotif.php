@@ -43,7 +43,7 @@ class Pushnotif extends CI_Controller
         // die;
         // Query subscribers from database
         $time = time();
-        $query = $this->db->query("SELECT * FROM `push_subscribers` WHERE `expirationTime` = 0 OR `expirationTime` > '{$time}'  AND id = '25'");
+        $query = $this->db->query("SELECT * FROM `push_subscribers` WHERE `expirationTime` = 0 OR `expirationTime` > '{$time}'  AND id = '62'");
 
         if ($query->num_rows() > 0) {
             $auth = [
