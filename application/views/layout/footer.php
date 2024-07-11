@@ -26,6 +26,7 @@
 		<button class="js-push-btn" style="display: none;">
 			Subscribe Push Messaging
 		</button>
+		<span class="device"></span>
 		<div>
 			<span class="logo">Kanzu Permai Abadi</span>
 			<hr style="color: white;">
