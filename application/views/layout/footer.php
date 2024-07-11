@@ -21,9 +21,11 @@
 		border-radius: 10px;
 	}
 </style>
-
 <section id="contact" class="contact pb-0 pt-0">
 	<footer style="background: #033b6c;">
+		<button class="js-push-btn" style="display: none;">
+			Subscribe Push Messaging
+		</button>
 		<div>
 			<span class="logo">Kanzu Permai Abadi</span>
 			<hr style="color: white;">
